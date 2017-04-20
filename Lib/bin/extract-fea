@@ -630,7 +630,7 @@ $ ft2fea -request "GPOS|GSUB feature *" \\
 
 """
     from fontTools.ttLib import TTFont
-    from ft2fea import makeName, printFont
+    from extractFea.ft2fea import makeName, printFont
     args = parser.parse_args()
     font = TTFont(args.font)
     query = ExportQuery(**vars(args))
